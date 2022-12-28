@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-wrap {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            /* align-items: center;
+            justify-content: center; */
+
+        }
+
+        .box {
+            position: relative;
+            margin: 10px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            overflow: hidden;
+            display: flex;
+            flex-flow: column wrap;
+            width: 400px;
+            height: 300px;
+
+        }
+
+        .box img {
+            width: 400px;
+            display: block;
+            height: 300px;
+            position: absolute;
+            z-index: 30;
+            transform: translatey(0px);
+            z-index: 10;
+            transition: all 0.35s ease-in-out;
+        }
+        .box .info {
+            opacity: 0;
+            visibility: hidden;
+            z-index: 20;
+            position: absolute;
+            left: 0;
+            top: auto;
+            bottom: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 13px;
+            transform: translatey(100%);
+            text-align: center;
+            transition: all 0.35s ease-in-out;
+        }
+
+        .box .info h3 {
+            font-size: 28px;
+            padding-bottom: 5px;
+        }
+
+        .box:hover img {
+            transform: translatey(-83px);
+        }
+
+        .box:hover .info {
+            opacity: 1;
+            visibility: visible;
+            transform: translatey(0);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box-wrap">
+        <div class="box">
+            <div class="img"><img
+                    src="https://images.unsplash.com/photo-1531501824979-4813e568563e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    alt=""></div>
+            <div class="info">
+                <h3>Title</h3>
+                <p>이미지 설명 부분입니다.</p>
+            </div>
+            <div class="img"><img
+                    src="https://images.unsplash.com/photo-1531501824979-4813e568563e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    alt=""></div>
+            <div class="info">
+                <h3>Title</h3>
+                <p>이미지 설명 부분입니다.</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
