@@ -124,6 +124,9 @@ footer {
 .btn1:active {
   border-color: #ff4d00;
 }
+.btn1:hover {
+  cursor: pointer;
+}
 .details_img:hover {
   transform: scale(1.05);
   transition-duration: 1s;
@@ -131,3 +134,18 @@ footer {
 .details_img:active {
   opacity: 0.5;
 }
+/* #popbox {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+#popup {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  background-color: white;
+  left: 0;
+  right: 0;
+  transform: translate(140%, 35%);
+} */
