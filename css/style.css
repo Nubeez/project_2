@@ -2,13 +2,12 @@
   #slider {
     width: 100%;
     height: 500px;
-    position: absolute;
     top: 0;
     left: 0;
   }
   #slider video {
-    max-width: 100%;
-    min-height: 100%;
+    min-width: 100%;
+    height: 500px;
   }
   #logo {
     width: 70px;
@@ -74,7 +73,7 @@
     color: white;
     padding: 15px;
     display: block;
-    font-size: 0.6em;
+    font-size: 0.8em;
   }
   .reserve {
     display: none;
@@ -113,7 +112,6 @@
   }
   .box1 p {
     padding: 20% 20%;
-
   }
   .box1 h1 {
     font-size: 2em;
@@ -686,6 +684,7 @@
   }
   .texts {
     width: 100%;
+    height: 100px;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -695,20 +694,22 @@
   }
   .texts h5 {
     padding: 5px;
-    font-size: 0.5em;
+    font-size: 0.6em;
     color: gray;
   }
   .texts span {
-    padding: 5px;
-    font-size: 0.7em;
+    line-height: 20px;
+    font-size: 1em;
     font-family: "PuradakGentleGothicR";
+    text-align: center;
   }
   footer span {
-    font-size: 0.5em;
+    font-size: 0.8em;
+    margin-bottom: 10px;
     display: flex;
   }
   #footertext {
-    width: 50%;
+    width: 100%;
     color: rgb(194, 193, 193);
     display: flex;
     justify-content: space-around;
@@ -716,17 +717,19 @@
   }
   #ft_box {
     width: 100%;
-    position: absolute;
     display: flex;
     margin: 0 auto;
     align-items: center;
     justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .logo {
     width: 100%;
   }
   .sing_in {
-    width: 90%;
+    width: 50%;
+    padding: 10px;
   }
 }
 
@@ -736,13 +739,12 @@
   #slider {
     width: 100%;
     height: 500px;
-    position: absolute;
     top: 0;
     left: 0;
   }
   #slider video {
     max-width: 100%;
-    min-height: 100%;
+    min-height: 500px;
   }
   .main_title h1 {
     font-size: 2.7em;
@@ -803,6 +805,7 @@
     color: white;
     padding: 15px;
     display: block;
+    font-size: 1em;
   }
   .reserve {
     display: none;
@@ -1412,28 +1415,31 @@
 
   footer span {
     font-size: 0.8em;
+    margin-bottom: 10px;
     display: flex;
   }
   #footertext {
-    width: 35%;
+    width: 100%;
     color: rgb(194, 193, 193);
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
   #ft_box {
-    width: 70%;
-    position: absolute;
+    width: 100%;
     display: flex;
     margin: 0 auto;
     align-items: center;
     justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .logo {
     width: 100%;
   }
   .sing_in {
-    width: 90%;
+    width: 30%;
+    padding: 40px;
   }
 }
 /* 반응형 중간사이즈  끝*/
@@ -1442,7 +1448,6 @@
   #slider {
     width: 100%;
     height: 500px;
-    position: absolute;
     top: 0;
     left: 0;
   }
@@ -1689,8 +1694,6 @@
     display: flex;
     flex-flow: column wrap;
     align-content: space-around;
-    
-
   }
   .special img {
     width: 60%;
@@ -1704,7 +1707,7 @@
     text-align: center;
     color: white;
     line-height: 60px;
-    font-family: "KoddiUDOnGothic-Regular";   
+    font-family: "KoddiUDOnGothic-Regular";
   }
   .special > h4 {
     font-size: 0.8em;
@@ -2128,30 +2131,34 @@
   }
   .texts span {
     font-size: 1em;
+    font-family: "PuradakGentleGothicR";
   }
   footer span {
     font-size: 1em;
+    margin-bottom: 10px;
     display: flex;
   }
   #footertext {
-    width: 25%;
+    width: 100%;
     color: rgb(194, 193, 193);
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
   #ft_box {
-    width: 75%;
-    position: absolute;
+    width: 100%;
     display: flex;
     margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
   }
   .logo {
     width: 100%;
   }
   .sing_in {
-    width: 90%;
+    width: 30%;
+    padding: 40px;
   }
 }

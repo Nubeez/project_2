@@ -52,7 +52,7 @@ body {
 }
 #wrap {
   width: 100%;
-  height: 7700px;
+  height: 7530px;
   margin: 0 auto;
 }
 #scrollTop {
@@ -76,20 +76,21 @@ header {
   background-color: rgba(0, 0, 1, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   z-index: 2;
-  position: relative;
+  position: fixed;
   display: flex;
 }
 .opacity1 {
   width: 100%;
-  height: 780px;
+  height: 500px;
   background-color: black;
   opacity: 0.2;
+  position: absolute;
 }
 .section1 {
   width: 100%;
-  height: 880px;
+  height: auto;
   position: relative;
-  background: url(../background/restaurant1.jpg) fixed;
+  /* background: url(../background/restaurant1.jpg) fixed; */
   background-size: cover;
   overflow: hidden;
 }
@@ -101,17 +102,10 @@ header {
 }
 footer {
   width: 100%;
-  height: 170px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.opacity2 {
-  width: 100%;
-  height: 170px;
-  position: absolute;
   background-color: black;
-  opacity: 0.5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .imgs a {
   text-decoration: none;
