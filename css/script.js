@@ -5,7 +5,7 @@ $(function () {
       $(this)
         .children(".details_menubox")
         .stop()
-        .animate({ opacity: "1", top: "1.5%" }, 400);
+        .animate({ opacity: "1", top: "6%" }, 400);
     },
     function () {
       $(this)
@@ -52,6 +52,15 @@ $(function () {
       $(".DRINKS").fadeIn(500);
     });
   // 푸드 태그아닌건 숨기고 해당 태그는 페이드인
+
+  $(".clicked li").click(function () {
+    if ($(".clicked li").hasClass("linebot")) {
+      //  clicked li 클릭 시 linebot 클래스를 찾고
+      $(".clicked li").removeClass("linebot"); // linebot 클래스가 있으면 지우고
+      $(this).addClass("linebot"); // clicked li에 추가한다
+    }
+    // 메뉴 리스트 클릭 시 하단 선택표시
+  });
 
   var resize = window.matchMedia("(min-width: 1200px)");
 
@@ -117,7 +126,7 @@ $(function () {
     //스크롤의 위치가 화면 아래일수록 == scrollTop 의 값이 커짐
 
     if (roll) {
-      //윈도우 스크롤 값이 startHeight 의 높이와 같거나 크면
+      //윈도우 스크롤 값이 startHeight 의 높이와 같거나 크면 보여지고
       $("#scrollTop").show().css({ position: "fixed" });
     } else {
       $("#scrollTop").hide();
@@ -141,4 +150,10 @@ $(function () {
     }
   });
   //  nav 토글
+  $(".btn1").click(function () {
+    $("#popbox").show();
+  });
+  $("#x").click(function () {
+    $("#popbox").hide();
+  });
 });

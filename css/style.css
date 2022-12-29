@@ -1741,16 +1741,19 @@
   }
 
   .bgimg0 {
+    height: 100%;
     background: url(../background/food_1.jpg);
     background-size: cover;
     background-position: center;
   }
   .bgimg1 {
+    height: 100%;
     background: url(../background/food_2.jpg);
     background-size: cover;
     background-position: center;
   }
   .bgimg2 {
+    height: 100%;
     background: url(../background/food_3.jpg);
     background-size: cover;
     background-position: center;
@@ -1964,6 +1967,12 @@
     border-bottom: 2px solid rgb(233, 184, 167);
     opacity: 0.9;
     color: gray;
+  }
+  .linebot {
+    border-bottom: 2px solid coral;
+  }
+  .linebot {
+    border-bottom: 2px solid coral;
   }
   /* 갤러리 이미지 시작 */
   .gallery {
