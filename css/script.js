@@ -156,4 +156,20 @@ $(function () {
   $("#x").click(function () {
     $("#popbox").hide();
   });
+  //   플러그인 datetimepicker
+  $(".datetimepicker").datetimepicker({
+    format: "Y-m-d H:i",
+  });
+  //   플러그인 datetimepicker
+  $("#Reservation").change(function () {
+    $(".choi").css("display", "block");
+  });
+  $("#Reservation2").change(function () {
+    $(".choi2").css("display", "block");
+  });
+  $("#Resbtn").click(function(){
+    alert("예약완료");
+    ('#popup').close(); 
+  });
+//   예약창이 닫히는것 구현해야함
 });

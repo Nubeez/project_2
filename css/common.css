@@ -194,3 +194,12 @@ footer {
   border: none;
   margin-bottom: 1em;
 }
+.choi {
+  display: none;
+}
+.choi2 {
+  display: none;
+}
+#Resbtn {
+  float: right;
+}

@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Court</title>
     <!-- plugin -->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css">
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <script src="css/script.js"></script>
 </head>
 
@@ -24,24 +28,28 @@
                     <img src="logo/restaurant_logo2.png" alt="" id="poplogo">
                     <img src="img/x.png" alt="" id="x">
                     <h2>시간을 선택해주세요.</h2>
-                    <div class="aaaa"></div>
                     <select name="Reservation" id="Reservation">
-                        <option value="">--Please choose an option--</option>
-                        <option value="1">아침</option>
-                        <option value="2">점심</option>
-                        <option value="3">저녁</option>
+                        <option value="">--Please choose an time--</option>
+                        <option value="option1">아침</option>
+                        <option value="option2">점심</option>
+                        <option value="option3">저녁</option>
                     </select>
-                    <h2>인원을 선택해주세요.</h2>
-                    <select name="Reservation" id="Reservation2">
-                        <option value=""> </option>
-                        <option value="1">1명</option>
-                        <option value="2">2명</option>
-                        <option value="3">3명</option>
-                        <option value="3">4명</option>
-                        <option value="3">5명</option>
-                        <option value="3">6명</option>
-                    </select>
-                    <p>Date: <input type="text" id="datepicker"></p>
+                    <div class="choi">
+                        <h2>인원을 선택해주세요.</h2>
+                        <select name="Reservation" id="Reservation2">
+                            <option value="">--Please choose an person--</option>
+                            <option value="1">1명</option>
+                            <option value="2">2명</option>
+                            <option value="3">3명</option>
+                            <option value="3">4명</option>
+                            <option value="3">5명</option>
+                            <option value="3">6명</option>
+                        </select>
+                    </div>
+                    <div class="choi2">
+                        예약일시 : <input type='text' class='datetimepicker' name='start_dt' style='width:150px;'>
+                    </div>
+                    <button id="Resbtn">예약</button>
                 </label>
             </div>
         </div>
