@@ -52,7 +52,7 @@ body {
 }
 #wrap {
   width: 100%;
-  height: 7530px;
+  height: 5530px;
   margin: 0 auto;
   position: relative;
 }
@@ -73,7 +73,6 @@ body {
 }
 header {
   width: 100%;
-  height: 100px;
   background-color: rgba(0, 0, 1, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   z-index: 2;
@@ -95,10 +94,11 @@ header {
   background-size: cover;
   overflow: hidden;
 }
-
 #logo {
-  width: 100px;
-  height: 100px;
+  /* width: 100%; */
+  height: 120px;
+  margin-top: 10px;
+  padding-right: 20px;
   float: left;
 }
 footer {
@@ -116,6 +116,31 @@ footer {
   transform: scale(1.1);
   color: #ff4d00;
 }
+#menubar_ul li a {
+  font-family: "ONE-Mobile-Title";
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  display: block;
+  font-size: 1em;
+}
+.visible {
+  background-color: black;
+}
+.listbtn {
+  font-family: "ONE-Mobile-Title";
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  display: block;
+  font-size: 0.8em;
+}
+.listbtn:hover {
+  transform: scale(1.1);
+  color: #ff4d00;
+  cursor: pointer;
+}
+
 .btn1:active {
   border-color: #ff4d00;
 }
@@ -128,6 +153,12 @@ footer {
 }
 .details_img:active {
   opacity: 0.5;
+}
+.linebot {
+  border-bottom: 2px solid coral;
+}
+.linebot {
+  border-bottom: 2px solid coral;
 }
 #popbox {
   width: 100vw;
@@ -158,7 +189,7 @@ footer {
   padding: 10px;
 }
 #poplogo {
-  width: 100px;
+  width: 80px;
   height: 100px;
   float: left;
 }

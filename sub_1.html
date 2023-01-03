@@ -1,33 +1,120 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Court</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- plugin -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css">
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/subpage.css">
+
     <script src="css/script.js"></script>
 </head>
+
 <body>
+    <!--예약페이지는 따로 팝업로 구현 -->
+    <div id="popbox">
+        <div id="brline">
+            <label id="popup">
+                <img src="logo/logo.png" alt="" id="poplogo">
+                <img src="img/x.png" alt="" id="x">
+                <h2>시간을 선택해주세요.</h2>
+                <select name="Reservation" id="Reservation">
+                    <option value="">--Please choose an time--</option>
+                    <option value="option1">아침</option>
+                    <option value="option2">점심</option>
+                    <option value="option3">저녁</option>
+                </select>
+                <div class="choi">
+                    <h2>인원을 선택해주세요.</h2>
+                    <select name="Reservation" id="Reservation2">
+                        <option value="">--Please choose an person--</option>
+                        <option value="1">1명</option>
+                        <option value="2">2명</option>
+                        <option value="3">3명</option>
+                        <option value="3">4명</option>
+                        <option value="3">5명</option>
+                        <option value="3">6명</option>
+                    </select>
+                </div>
+                <div class="choi2">
+                    예약일시 : <input type='text' class='datetimepicker' name='start_dt' style='width:150px;'>
+                </div>
+                <button id="Resbtn">예약</button>
+            </label>
+        </div>
+    </div>
     <div class="section1">
         <header>
             <div class="menubar">
-                <img src="logo/restaurant_logo1.png" alt="" id="logo">
+                <a href="index.html#wrap"><img src="logo/logo2.png" alt="" id="logo"></a>
                 <nav>
                     <ul id="menubar_ul">
-                        <li><a href="#section5">Special</a></li>
-                        <li><a href="#section6">MENU</a></li>
-                        <li><a href="#section7">CHEF</a></li>
-                        <li><a href="#section8">GALLERY</a></li>
-                        <li><a href="#section9">Review</a></li>
-                        <li><a href="#section10">CONTACT</a></li>
+                        <li><a href="index.html#section5">Special</a></li>
+                        <li><a href="index.html#section6">MENU</a></li>
+                        <li><a href="index.html#section7">CHEF</a></li>
+                        <li><a href="index.html#section8">GALLERY</a></li>
+                        <li><a href="index.html#section9">Review</a></li>
+                        <li><a href="sub_1.html">Room</a></li>
+                        <li><a href="index.html#section10">Latest News</a></li>
+                        <li class="listbtn">Contect</li>
                     </ul>
                 </nav>
                 <img src="img/i.png" id="logo_toggle" alt="">
                 <p class="reserve">테이블을 예약하시겠습니까? </p>
-                <a href="" class="btn1">지금 예약</a>
+                <div class="btn1">지금 예약</div>
             </div>
         </header>
+        <div class="opacity1"></div>
+        <div id="slider"><video src="video/video.mp4" muted autoplay loop></video></div>
+        <div class="main_title">
+            <h1>Restaurant Mae:il</h1>
+        </div>
+    </div>
+    <div id="subsection1">
+        <ul id="Roomlist">
+            <li><a href="">Private Dining Room</a></li>
+            <li><a href="">Hall, Courtyard, Lobby</a></li>
+        </ul>
+        <div id="Room_content">123123123</div>
+    </div>
+    <div id="subsection2">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d457.2780880399488!2d126.95479623820616!3d37.47660419784874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca0209636ac55%3A0x6567056fb584578c!2z7ISc7Jq47Yq567OE7IucIOq0gOyVheq1rCDrtInsspzrj5kgMTY5My00Mw!5e0!3m2!1sko!2skr!4v1672733470367!5m2!1sko!2skr"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+    </div>
+    <footer>
+        <div id="ft_box">
+            <a href="index.html#wrap"><img src="logo/logo2.png" alt="" class="logo"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="sns/facebook.png" alt="sign"
+                    class="sing_in"></a>
+            <a href="https://www.kakao.com" target="_blank"> <img src="sns/kakao.png" alt="sign" class="sing_in"></a>
+            <a href="https://www.google.com" target="_blank"> <img src="sns/gogle_plus.png" alt="sign"
+                    class="sing_in"></a>
+            <a href="https://www.Instagram.com" target="_blank"> <img src="sns/Instagram.png" alt="sign"
+                    class="sing_in"></a>
+            <a href="https://www.twitter.com" target="_blank"> <img src="sns/twitter.png" alt="sign"
+                    class="sing_in"></a>
+            <a href=""> <img src="sns/signup.png" alt="sign" class="sing_in"></a>
+            <div id="footertext">
+                <span>
+                    서울특별시 관악구 봉천동 1693-43
+                    본점 번호 02-777-7777
+                    사업자 번호 111-22-33333
+                </span>
+            </div>
+        </div>
+
+    </footer>
 </body>
+
 </html>

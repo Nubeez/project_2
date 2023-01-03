@@ -9,42 +9,24 @@
     min-width: 100%;
     height: 500px;
   }
-  #logo {
-    width: 70px;
-    height: 70px;
-    /* float: left; */
-  }
   .main_title h1 {
-    font-size: 1.6em;
+    font-size: 2.5vh;
     font-family: "PuradakGentleGothicR";
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 0px 2px black;
     color: white;
   }
-  .main_title p {
-    font-size: 1em;
-    font-family: "PuradakGentleGothicR";
-    position: absolute;
-    top: 46%;
-    left: 50%;
-    text-shadow: 0px 2px black;
-    transform: translate(-50%, 100%);
-    color: white;
-  }
   .menubar {
     width: 100%;
-    height: 100px;
-    /* height: 100px; */
-    /* position: sticky; */
+    /* height: 00px; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
   }
-
   .menudar nav {
     display: flex;
   }
@@ -57,7 +39,7 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 100px;
+    top: 130px;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
@@ -67,20 +49,17 @@
   #menubar_ul li {
     list-style: none;
   }
-  #menubar_ul li a {
-    font-family: "ONE-Mobile-Title";
-    text-decoration: none;
-    color: white;
-    padding: 15px;
-    display: block;
-    font-size: 0.8em;
-  }
   .reserve {
     display: none;
   }
   .btn1 {
     display: none;
   }
+  #logo_toggle {
+    display: block;
+    cursor: pointer;
+  }
+
   #section2 {
     width: 100%;
     height: 880px;
@@ -252,7 +231,7 @@
 
   #section6 {
     width: 100%;
-    height: 31%;
+    height: 38%;
     background-color: rgb(255, 248, 244);
     position: relative;
     display: flex;
@@ -300,7 +279,7 @@
   .foodtext {
     background-color: white;
     width: 85%;
-    height: 55%;
+    height: 60%;
     position: absolute;
     display: flex;
     flex-flow: column wrap;
@@ -308,8 +287,8 @@
     justify-content: space-around;
   }
   .foodbox_menu {
-    width: 90%;
-    height: 95%;
+    width: 94%;
+    height: 94%;
     border: 5px solid #5e627b;
     display: flex;
     flex-flow: column wrap;
@@ -725,7 +704,8 @@
     flex-wrap: wrap;
   }
   .logo {
-    width: 100%;
+    width: 80px;
+    margin-top: 25px;
   }
   .sing_in {
     width: 50%;
@@ -747,30 +727,18 @@
     min-height: 500px;
   }
   .main_title h1 {
-    font-size: 2.7em;
+    font-size: 2.3em;
     font-family: "PuradakGentleGothicR";
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 0px 2px black;
     color: white;
   }
-  .main_title p {
-    font-size: 1.7em;
-    font-family: "PuradakGentleGothicR";
-    position: absolute;
-    top: 46%;
-    left: 50%;
-    text-shadow: 0px 2px black;
-    transform: translate(-50%, 100%);
-    color: white;
-  }
   .menubar {
     width: 1170px;
-    height: 100px;
     /* height: 100px; */
-    /* position: sticky; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -789,7 +757,7 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 100px;
+    top: 130px;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
@@ -799,21 +767,12 @@
   #menubar_ul li {
     list-style: none;
   }
-  #menubar_ul li a {
-    font-family: "ONE-Mobile-Title";
-    text-decoration: none;
-    color: white;
-    padding: 15px;
-    display: block;
-    font-size: 1em;
-  }
   .reserve {
     display: none;
   }
   .btn1 {
     display: none;
   }
-
   #logo_toggle {
     display: block;
     cursor: pointer;
@@ -1435,7 +1394,8 @@
     flex-wrap: wrap;
   }
   .logo {
-    width: 100%;
+    width: 80px;
+    margin-top: 25px;
   }
   .sing_in {
     width: 30%;
@@ -1456,29 +1416,18 @@
     min-height: 100%;
   }
   .main_title h1 {
-    font-size: 3.5em;
+    font-size: 3.6em;
     font-family: "PuradakGentleGothicR";
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 0px 2px black;
     color: white;
   }
-  .main_title p {
-    font-size: 2em;
-    font-family: "PuradakGentleGothicR";
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    text-shadow: 0px 2px black;
-    transform: translate(-50%, 100%);
-    color: white;
-  }
   .menubar {
     width: 1170px;
-    height: 100px;
-    height: 100px;
+    /* height: 100px; */
     position: sticky;
     display: flex;
     flex-wrap: wrap;
@@ -1506,8 +1455,11 @@
     font-family: "ONE-Mobile-Title";
     text-decoration: none;
     color: white;
-    padding: 30px;
+    padding: 15px;
     display: block;
+  }
+  .listbtn {
+    display: none;
   }
   .reserve {
     font-family: "NEXON Lv1 Gothic OTF";
@@ -1716,6 +1668,7 @@
   }
   #section6 {
     width: 100%;
+    height: 835px;
     background-color: rgb(255, 248, 244);
     position: relative;
     display: flex;
@@ -2164,7 +2117,8 @@
     align-items: center;
   }
   .logo {
-    width: 100%;
+    width: 80px;
+    margin-top: 25px;
   }
   .sing_in {
     width: 30%;

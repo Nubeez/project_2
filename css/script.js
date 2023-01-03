@@ -156,6 +156,9 @@ $(function () {
   $("#x").click(function () {
     $("#popbox").hide();
   });
+  $(".listbtn").click(function () {
+    $("#popbox").show();
+  });
   //   플러그인 datetimepicker
   $(".datetimepicker").datetimepicker({
     format: "Y-m-d H:i",
@@ -167,9 +170,15 @@ $(function () {
   $("#Reservation2").change(function () {
     $(".choi2").css("display", "block");
   });
-  $("#Resbtn").click(function(){
+  $("#Resbtn").click(function () {
     alert("예약완료");
-    ('#popup').close(); 
+    location.reload();
   });
-//   예약창이 닫히는것 구현해야함
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+      $("header").addClass("visible");
+    } else {
+      $("header").removeClass("visible");
+    }
+  });
 });
