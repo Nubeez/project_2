@@ -117,11 +117,9 @@ $(function () {
   //스크롤전 scrollTop 숨기기
 
   $(window).scroll(function () {
-    // 윈도우 스크롤 기능 작동
     var roll = $(this).scrollTop() >= startHeight;
-    // 스크롤이 startHeight 의 값을 넘었을 때
-    //윈도우 스크롤의 값이 startHeight 의 높이와 같거나 크다
-    //scrollTop 은 윈도우에서 스크롤의 위치가 가장 상위 의미로 해석
+    // 스크롤이 startHeight의 값을 넘었을 때
+    //scrollTop 은 윈도우에서 스크롤의 위치가 가장 상위
     //스크롤의 위치가 화면 아래일수록 == scrollTop 의 값이 커짐
 
     if (roll) {
@@ -191,9 +189,21 @@ $(function () {
     .delay(1000)
     .animate({ opacity: 0.9, bottom: 150 }, 1000, "swing");
 
-  // 호버 시 애니메이션 이동 시도중...미구현
-  $("#Roomlist li a").mouseenter(function () {
-    $("#Room_wrap span");
-    $(this).animate({ opacity: 0.9, left: 150 }, 500, "linear");
-  });
+  $("#R1").hover(
+    function () {
+      $(".m").stop().animate({ opacity: "1", left: "22.5%" }, "fast", "swing");
+    },
+    function () {
+      $(".m").stop().animate({ opacity: "0", left: "0%" }, "fast", "swing");
+    }
+  );
+  $("#R2").hover(
+    function () {
+      $(".mm").stop().animate({ opacity: "1", right: "22.7%" }, "fast", "swing");
+    },
+    function () {
+      $(".mm").stop().animate({ opacity: "0", right: "0%" }, "fast", "swing");
+    }
+  );
+  //   방 소개 슬라이드
 });

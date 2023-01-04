@@ -22,23 +22,116 @@
   margin: 30px;
   list-style: none;
 }
-#Roomlist li a {
+#R1 a,
+#R2 a {
   font-size: 3.2vw;
   font-family: "ONE-Mobile-Title";
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
-#Room_wrap span {
-  display: block;
-  border-bottom: 2px solid coral;
-  width: 32.6vw;
+.m {
+  border-bottom: 3px solid coral;
+  width: 4.7vw;
   position: absolute;
-  left: 8.5%;
-  bottom: 24px;
-  z-index: 100;
+  left: 0%;
+  bottom: 23px;
+  opacity: 0;
 }
-#Room_content {
+.mm {
+  border-bottom: 3px solid coral;
+  width: 4.7vw;
+  position: absolute;
+  right: 0%;
+  bottom: 23px;
+  opacity: 0;
+}
+#bgwrap {
   width: 100%;
-  height: 1800px;
-  background-color: blueviolet;
+  background-color: white;
+}
+#Rmwrap {
+  width: 1700px;
+  margin: 0 auto;
+}
+#Rmwrap h1 {
+  line-height: 150px;
+  text-align: center;
+  font-size: 4vh;
+  font-family: "NEXON Lv1 Gothic OTF";
+}
+.Rmslider {
+  width: 100%;
+  /* height: 1000px; */
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+.Rmimgs {
+  width: 680%;
+  /* height: 800px; */
+  display: flex;
+  transition-duration: 1s;
+}
+.Rmimg {
+  width: 1700px;
+  height: 790px;
+  overflow: hidden;
+}
+.Rmimg img {
+  width: 100%;
+}
+.Rmimg:nth-child(1) {
+  background-color: darkgreen;
+}
+.Rmimg:nth-child(2) {
+  background-color: tomato;
+}
+.Rmimg:nth-child(3) {
+  background-color: gray;
+}
+.Rmimg:nth-child(4) {
+  background-color: darkolivegreen;
+}
+#submap {
+  width: 100%;
+  height: 450px;
+}
+.int p {
+  margin: 50px;
+  line-height: 20px;
+  font-size: 2.2vh;
+  font-family: "NEXON Lv1 Gothic OTF";
+}
+#Rmprev {
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  right: 5.2%;
+  bottom: 19.4%;
+  z-index: 1;
+}
+#Rmprev img {
+  width: 25px;
+  height: 40px;
+  padding: 30px;
+}
+#Rmnext {
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  right: 0%;
+  bottom: 19.4%;
+  z-index: 1;
+}
+#Rmnext img {
+  width: 25px;
+  height: 40px;
+  padding: 30px;
 }
