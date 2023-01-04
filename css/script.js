@@ -156,6 +156,9 @@ $(function () {
   $("#x").click(function () {
     $("#popbox").hide();
   });
+  $("#Cancel").click(function () {
+    $("#popbox").hide();
+  });
   $(".listbtn").click(function () {
     $("#popbox").show();
   });
@@ -183,5 +186,5 @@ $(function () {
   });
   $(".main_title h1")
     .delay(1000)
-    .animate({ opacity: 0.8, bottom: 200 }, 800, "swing");
+    .animate({ opacity: 0.9, bottom: 200 }, 1000, "swing");
 });
