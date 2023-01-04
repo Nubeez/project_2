@@ -181,4 +181,7 @@ $(function () {
       $("header").removeClass("visible");
     }
   });
+  $(".main_title h1")
+    .delay(1000)
+    .animate({ opacity: 0.8, bottom: 200 }, 800, "swing");
 });

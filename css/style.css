@@ -9,16 +9,17 @@
     min-width: 100%;
     height: 500px;
   }
-  .main_title h1 {
-    font-size: 2.5vh;
-    font-family: "PuradakGentleGothicR";
+  /* .main_title h1 {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 0px 2px black;
+    bottom: 0;
+    font-size: 3.2em;
+    font-weight: 700;
+    font-family: "PuradakGentleGothicR";
+    opacity: 0;
+    width: 100%;
+    text-align: center;
     color: white;
-  }
+  } */
   .menubar {
     width: 100%;
     /* height: 00px; */
@@ -188,18 +189,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .main_title2 {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .main_title2 h1 {
-    font-size: 2.8em;
-    text-shadow: 0px 1px white;
-    font-family: "PuradakGentleGothicR";
-    color: #ff4d00;
-    padding: 50px;
   }
   .special {
     /* width: 100%; */
@@ -726,7 +715,7 @@
     max-width: 100%;
     min-height: 500px;
   }
-  .main_title h1 {
+  /* .main_title h1 {
     font-size: 2.3em;
     font-family: "PuradakGentleGothicR";
     position: absolute;
@@ -735,7 +724,7 @@
     transform: translate(-50%, -50%);
     text-shadow: 0px 2px black;
     color: white;
-  }
+  } */
   .menubar {
     width: 1170px;
     /* height: 100px; */
@@ -905,17 +894,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .main_title2 {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .main_title2 h1 {
-    font-size: 2.8em;
-    text-shadow: 0px 1px white;
-    font-family: "PuradakGentleGothicR";
-    color: #ff4d00;
   }
   .special {
     width: 100%;
@@ -1415,7 +1393,7 @@
     max-width: 100%;
     min-height: 100%;
   }
-  .main_title h1 {
+  /* .main_title h1 {
     font-size: 3.6em;
     font-family: "PuradakGentleGothicR";
     position: absolute;
@@ -1424,7 +1402,7 @@
     transform: translate(-50%, -50%);
     text-shadow: 0px 2px black;
     color: white;
-  }
+  } */
   .menubar {
     width: 1170px;
     /* height: 100px; */
@@ -1629,17 +1607,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .main_title2 {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .main_title2 h1 {
-    font-size: 4em;
-    text-shadow: 0px 1px white;
-    font-family: "PuradakGentleGothicR";
-    color: #ff4d00;
   }
   .special {
     width: 100%;

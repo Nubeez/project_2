@@ -79,6 +79,17 @@ header {
   position: fixed;
   display: flex;
 }
+.main_title h1 {
+    position: absolute;
+    bottom: 0;
+    font-size: 3.2em;
+    font-weight: 700;
+    font-family: "PuradakGentleGothicR";
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
 .opacity1 {
   width: 100%;
   height: 500px;
