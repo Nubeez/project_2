@@ -113,7 +113,6 @@ $(function () {
 
   var startHeight = $("header").height();
   //시작할 Height 의 높이
-
   $("#scrollTop").hide();
   //스크롤전 scrollTop 숨기기
 
@@ -142,6 +141,7 @@ $(function () {
   $("#logo_toggle").click(function () {
     $("#menubar_ul").slideToggle();
   });
+
   $(window).resize(function () {
     if (window.innerWidth > 1200) {
       $("#menubar_ul").show();
@@ -162,6 +162,7 @@ $(function () {
   $(".listbtn").click(function () {
     $("#popbox").show();
   });
+
   //   플러그인 datetimepicker
   $(".datetimepicker").datetimepicker({
     format: "Y-m-d H:i",
@@ -177,6 +178,7 @@ $(function () {
     alert("예약완료");
     location.reload();
   });
+  // 윈두오 스크롤하여 50위치에 다다르면 header에 클래스추가
   $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
       $("header").addClass("visible");
@@ -184,7 +186,14 @@ $(function () {
       $("header").removeClass("visible");
     }
   });
+  //   메인 타이틀 제목 등장
   $(".main_title h1")
     .delay(1000)
-    .animate({ opacity: 0.9, bottom: 200 }, 1000, "swing");
+    .animate({ opacity: 0.9, bottom: 150 }, 1000, "swing");
+
+  // 호버 시 애니메이션 이동 시도중...미구현
+  $("#Roomlist li a").mouseenter(function () {
+    $("#Room_wrap span");
+    $(this).animate({ opacity: 0.9, left: 150 }, 500, "linear");
+  });
 });

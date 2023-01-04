@@ -9,19 +9,33 @@
   background-color: black;
   color: white;
 }
+#Room_wrap {
+  position: relative;
+}
 #Roomlist {
-  font-family: "ONE-Mobile-Title";
   display: flex;
+  text-align: center;
   justify-content: space-around;
 }
 #Roomlist li {
+  width: 100%;
   margin: 30px;
   list-style: none;
 }
 #Roomlist li a {
-  font-size: 3em;
+  font-size: 3.2vw;
+  font-family: "ONE-Mobile-Title";
   text-decoration: none;
   color: white;
+}
+#Room_wrap span {
+  display: block;
+  border-bottom: 2px solid coral;
+  width: 32.6vw;
+  position: absolute;
+  left: 8.5%;
+  bottom: 24px;
+  z-index: 100;
 }
 #Room_content {
   width: 100%;

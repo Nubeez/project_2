@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Court</title>
+    <title>Mae:il</title>
     <!-- plugin -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen"
@@ -16,8 +16,26 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/subpage.css">
-
     <script src="css/script.js"></script>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="logo/favi/favicon.ico"> <!--추가-->
+    <link rel="apple-touch-icon" sizes="57x57" href="logo/favi/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="logo/favi/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="logo/favi/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="logo/favi/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="logo/favi/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="logo/favi/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="logo/favi/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="logo/favi/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="logo/favi/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="logo/favi/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="logo/favi/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo/favi/favicon-16x16.png">
+    <link rel="manifest" href="/img/favi/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="logo/favi/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -76,18 +94,23 @@
             </div>
         </header>
         <div class="opacity1"></div>
-        <div id="slider"><video src="video/video.mp4" muted autoplay loop></video></div>
+        <div id="slider"><video src="video/video.mp4" muted="muted" autoplay="autoplay" loop></video></div>
         <div class="main_title">
-            <h1>Restaurant Mae:il</h1>
+            <h1>Restaurant<br>Mae:il</h1>
         </div>
     </div>
     <div id="subsection1">
-        <ul id="Roomlist">
-            <li><a href="">Private Dining Room</a></li>
-            <li><a href="">Hall, Courtyard, Lobby</a></li>
-        </ul>
+        <nav id="Room_wrap">
+            <ul id="Roomlist">
+                <li><a href="">Private Dining Room</a></li>
+                <li><a href="">Hall, Courtyard, Lobby</a></li>
+            </ul>
+            <span></span>
+        </nav>
+        <!-- 방 소개 -->
         <div id="Room_content">123123123</div>
     </div>
+    <!-- 지도 시작 -->
     <div id="subsection2">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d457.2780880399488!2d126.95479623820616!3d37.47660419784874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca0209636ac55%3A0x6567056fb584578c!2z7ISc7Jq47Yq567OE7IucIOq0gOyVheq1rCDrtInsspzrj5kgMTY5My00Mw!5e0!3m2!1sko!2skr!4v1672733470367!5m2!1sko!2skr"
