@@ -210,4 +210,17 @@ $(function () {
     }
   );
   //   방 소개 슬라이드
+  $("#Rmprev").click(function () {
+    $(".Rmimgs li:last").prependTo(".Rmimgs");
+    $(".Rmimgs").css("margin-left", "-100%");
+    $(".Rmimgs").stop().animate({ marginLeft: 0 }, 800);
+  });
+  $("#Rmnext").click(function () {
+    $(".Rmimgs")
+      .stop()
+      .animate({ marginLeft: "-100%" }, 800, function () {
+        $(".Rmimgs li:first").appendTo(".Rmimgs");
+        $(".Rmimgs").css({ marginLeft: 0 });
+      });
+  });
 });

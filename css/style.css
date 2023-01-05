@@ -1,25 +1,26 @@
 @media (max-width: 760px) {
+  #Rmwrap {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
   #slider {
     width: 100%;
     height: 500px;
     top: 0;
-    left: 0;
+    left: 0; 
   }
   #slider video {
     min-width: 100%;
     height: 500px;
+    display: none;
   }
-  /* .main_title h1 {
-    position: absolute;
-    bottom: 0;
-    font-size: 3.2em;
-    font-weight: 700;
-    font-family: "PuradakGentleGothicR";
-    opacity: 0;
-    width: 100%;
-    text-align: center;
-    color: white;
-  } */
+  #slider img{
+    min-width: 100%;
+    background-size: cover;
+    overflow: hidden;
+  }
   .menubar {
     width: 100%;
     /* height: 0px; */
@@ -334,7 +335,7 @@
   .details_text > span {
     font-weight: bold;
     line-height: 10px;
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
   .details_text p {
     font-size: 0.6em;
@@ -705,6 +706,12 @@
 /* 모바일 Portrait 사이즈 끝 */
 
 @media (min-width: 761px) and (max-width: 1199px) {
+  #Rmwrap {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
   #slider {
     width: 100%;
     height: 500px;
@@ -1383,6 +1390,12 @@
 /* 반응형 중간사이즈  끝*/
 
 @media (min-width: 1200px) {
+  #Rmwrap {
+    width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
   #slider {
     width: 100%;
     height: 500px;
@@ -1937,11 +1950,11 @@
   }
   #section9 {
     width: 100%;
-    height: 300px;
+    height: 320px;
     background-color: rgb(255, 248, 244);
   }
   #review_wrap {
-    width: 1171px;
+    width: 1170px;
     height: 300px;
     margin: 0 auto;
     overflow: hidden;
@@ -2011,7 +2024,7 @@
     cursor: pointer;
   }
   #section10 {
-    width: 1171px;
+    width: 1170px;
     margin: 0 auto;
     position: relative;
     background-size: cover;
