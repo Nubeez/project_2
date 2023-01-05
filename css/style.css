@@ -1372,10 +1372,10 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .logo {
+  /* .logo {
     width: 80px;
     margin-top: 25px;
-  }
+  } */
   .sing_in {
     width: 30%;
     padding: 40px;
