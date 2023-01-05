@@ -153,9 +153,11 @@ $(function () {
   });
   $("#x").click(function () {
     $("#popbox").hide();
+    location.reload();
   });
   $("#Cancel").click(function () {
     $("#popbox").hide();
+    location.reload();
   });
   $(".listbtn").click(function () {
     $("#popbox").show();
@@ -199,7 +201,9 @@ $(function () {
   );
   $("#R2").hover(
     function () {
-      $(".mm").stop().animate({ opacity: "1", right: "22.7%" }, "fast", "swing");
+      $(".mm")
+        .stop()
+        .animate({ opacity: "1", right: "22.7%" }, "fast", "swing");
     },
     function () {
       $(".mm").stop().animate({ opacity: "0", right: "0%" }, "fast", "swing");

@@ -9,6 +9,9 @@
   background-color: black;
   color: white;
 }
+.hover {
+  border-bottom: 3px solid coral;
+}
 #Room_wrap {
   position: relative;
 }
@@ -22,8 +25,8 @@
   margin: 30px;
   list-style: none;
 }
-#R1 a,
-#R2 a {
+#R1,
+#R2 {
   font-size: 3.2vw;
   font-family: "ONE-Mobile-Title";
   text-decoration: none;
