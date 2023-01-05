@@ -1,9 +1,6 @@
 @media (max-width: 760px) {
   #Rmwrap {
     width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
   }
   #slider {
     width: 100%;
@@ -41,7 +38,7 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 130px;
+    top: 120px;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
@@ -708,9 +705,6 @@
 @media (min-width: 761px) and (max-width: 1199px) {
   #Rmwrap {
     width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
   }
   #slider {
     width: 100%;
@@ -1392,9 +1386,6 @@
 @media (min-width: 1200px) {
   #Rmwrap {
     width: 1170px;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
   }
   #slider {
     width: 100%;

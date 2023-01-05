@@ -193,7 +193,7 @@ $(function () {
 
   $("#R1").hover(
     function () {
-      $(".m").stop().animate({ opacity: "1", left: "22.5%" }, "fast", "swing");
+      $(".m").stop().animate({ opacity: "1", left: "16%" }, "fast", "swing");
     },
     function () {
       $(".m").stop().animate({ opacity: "0", left: "0%" }, "fast", "swing");
@@ -203,7 +203,7 @@ $(function () {
     function () {
       $(".mm")
         .stop()
-        .animate({ opacity: "1", right: "22.7%" }, "fast", "swing");
+        .animate({ opacity: "1", right: "13.5%" }, "fast", "swing");
     },
     function () {
       $(".mm").stop().animate({ opacity: "0", right: "0%" }, "fast", "swing");
@@ -213,12 +213,12 @@ $(function () {
   $("#Rmprev").click(function () {
     $(".Rmimgs li:last").prependTo(".Rmimgs");
     $(".Rmimgs").css("margin-left", "-100%");
-    $(".Rmimgs").stop().animate({ marginLeft: 0 }, 800);
+    $(".Rmimgs").stop().animate({ marginLeft: 0 }, 500);
   });
   $("#Rmnext").click(function () {
     $(".Rmimgs")
       .stop()
-      .animate({ marginLeft: "-100%" }, 800, function () {
+      .animate({ marginLeft: "-100%" }, 500, function () {
         $(".Rmimgs li:first").appendTo(".Rmimgs");
         $(".Rmimgs").css({ marginLeft: 0 });
       });
