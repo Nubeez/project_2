@@ -155,10 +155,6 @@ $(function () {
     $("#popbox").hide();
     location.reload();
   });
-  $("#Cancel").click(function () {
-    $("#popbox").hide();
-    location.reload();
-  });
   $(".listbtn").click(function () {
     $("#popbox").show();
   });
@@ -178,6 +174,11 @@ $(function () {
     alert("예약완료");
     location.reload();
   });
+  $("#Cancel").click(function () {
+    $("#popbox").hide();
+    alert("예약취소");
+    location.reload();
+  });
   // 윈두오 스크롤하여 50위치에 다다르면 header에 클래스추가
   $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
@@ -193,10 +194,10 @@ $(function () {
 
   $("#R1").hover(
     function () {
-      $(".m").stop().animate({ opacity: "1", left: "16%" }, "fast", "swing");
+      $(".m").stop().animate({ opacity: "1", left: "15.7%" }, "fast", "linear");
     },
     function () {
-      $(".m").stop().animate({ opacity: "0", left: "0%" }, "fast", "swing");
+      $(".m").stop().animate({ opacity: "0", left: "0%" }, "fast", "linear");
     }
   );
   $("#R2").hover(

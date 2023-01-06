@@ -1,7 +1,4 @@
 @media (max-width: 760px) {
-  #Rmwrap {
-    width: 100%;
-  }
   #slider {
     width: 100%;
     height: 500px;
@@ -218,7 +215,7 @@
 
   #section6 {
     width: 100%;
-    height: 38%;
+    height: 40%;
     background-color: rgb(255, 248, 244);
     position: relative;
     display: flex;
@@ -669,6 +666,11 @@
     font-family: "PuradakGentleGothicR";
     text-align: center;
   }
+  .texts p {
+    font-size: 1em;
+    font-family: "PuradakGentleGothicR";
+    text-align: center;
+  }
   footer span {
     font-size: 0.7em;
     margin-bottom: 10px;
@@ -703,9 +705,6 @@
 /* 모바일 Portrait 사이즈 끝 */
 
 @media (min-width: 761px) and (max-width: 1199px) {
-  #Rmwrap {
-    width: 100%;
-  }
   #slider {
     width: 100%;
     height: 500px;
@@ -1350,7 +1349,10 @@
     font-size: 1em;
     font-family: "PuradakGentleGothicR";
   }
-
+  .texts p{
+    font-size: 1em;
+    font-family: "PuradakGentleGothicR";
+  }
   footer span {
     font-size: 0.8em;
     margin-bottom: 10px;
@@ -1372,10 +1374,10 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  /* .logo {
+  .logo {
     width: 80px;
     margin-top: 25px;
-  } */
+  }
   .sing_in {
     width: 30%;
     padding: 40px;
@@ -2063,6 +2065,10 @@
     color: gray;
   }
   .texts span {
+    font-size: 1em;
+    font-family: "PuradakGentleGothicR";
+  }
+  .texts p {
     font-size: 1em;
     font-family: "PuradakGentleGothicR";
   }
