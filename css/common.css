@@ -252,7 +252,7 @@ footer {
   margin: 0 auto;
   overflow: hidden;
 }
-.Rmimgs {
+.Rmimgs1 {
   width: 300%;
   list-style: none;
   flex-flow: row nowrap;
@@ -260,3 +260,22 @@ footer {
   align-items: center;
   overflow: hidden;
 }
+.Rmimgs2 {
+  width: 300%;
+  list-style: none;
+  flex-flow: row nowrap;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  display: none;
+}
+.Rmvisible {
+  opacity: 1;
+}
+.linebot2 {
+  padding: 4.3px;
+  border-bottom: 3px solid coral;
+}
+.display {
+    display: none;
+  }

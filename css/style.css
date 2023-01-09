@@ -746,7 +746,7 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 130px;
+    top: 120px;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
@@ -1349,7 +1349,7 @@
     font-size: 1em;
     font-family: "PuradakGentleGothicR";
   }
-  .texts p{
+  .texts p {
     font-size: 1em;
     font-family: "PuradakGentleGothicR";
   }
@@ -1895,10 +1895,7 @@
     color: gray;
   }
   .linebot {
-    border-bottom: 2px solid coral;
-  }
-  .linebot {
-    border-bottom: 2px solid coral;
+    border-bottom: 3px solid coral;
   }
   /* 갤러리 이미지 시작 */
   .gallery {

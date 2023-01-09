@@ -179,7 +179,7 @@ $(function () {
     alert("예약취소");
     location.reload();
   });
-  // 윈두오 스크롤하여 50위치에 다다르면 header에 클래스추가
+  // 윈도우 스크롤하여 50위치에 다다르면 header에 클래스추가
   $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
       $("header").addClass("visible");
@@ -192,9 +192,10 @@ $(function () {
     .delay(1000)
     .animate({ opacity: 0.9, bottom: 150 }, 1000, "swing");
 
+  // 메뉴 호버 줄긋기
   $("#R1").hover(
     function () {
-      $(".m").stop().animate({ opacity: "1", left: "15.7%" }, "fast", "linear");
+      $(".m").stop().animate({ opacity: "1", left: "15%" }, "fast", "linear");
     },
     function () {
       $(".m").stop().animate({ opacity: "0", left: "0%" }, "fast", "linear");
@@ -204,24 +205,92 @@ $(function () {
     function () {
       $(".mm")
         .stop()
-        .animate({ opacity: "1", right: "13.5%" }, "fast", "swing");
+        .animate({ opacity: "1", right: "12.5%" }, "fast", "linear");
     },
     function () {
-      $(".mm").stop().animate({ opacity: "0", right: "0%" }, "fast", "swing");
+      $(".mm").stop().animate({ opacity: "0", right: "0%" }, "fast", "linear");
     }
   );
   //   방 소개 슬라이드
   $("#Rmprev").click(function () {
-    $(".Rmimgs li:last").prependTo(".Rmimgs");
-    $(".Rmimgs").css("margin-left", "-100%");
-    $(".Rmimgs").stop().animate({ marginLeft: 0 }, 500);
+    $(".Rmimgs1 li:last").prependTo(".Rmimgs1");
+    $(".Rmimgs1").css("margin-left", "-100%");
+    $(".Rmimgs1").stop().animate({ marginLeft: 0 }, 500);
   });
   $("#Rmnext").click(function () {
-    $(".Rmimgs")
+    $(".Rmimgs1")
       .stop()
       .animate({ marginLeft: "-100%" }, 500, function () {
-        $(".Rmimgs li:first").appendTo(".Rmimgs");
-        $(".Rmimgs").css({ marginLeft: 0 });
+        $(".Rmimgs1 li:first").appendTo(".Rmimgs1");
+        $(".Rmimgs1").css({ marginLeft: 0 });
       });
   });
+  //2개
+  $("#Rmprev").click(function () {
+    $(".Rmimgs2 li:last").prependTo(".Rmimgs2");
+    $(".Rmimgs2").css("margin-left", "-100%");
+    $(".Rmimgs2").stop().animate({ marginLeft: 0 }, 500);
+  });
+  $("#Rmnext").click(function () {
+    $(".Rmimgs2")
+      .stop()
+      .animate({ marginLeft: "-100%" }, 500, function () {
+        $(".Rmimgs2 li:first").appendTo(".Rmimgs2");
+        $(".Rmimgs2").css({ marginLeft: 0 });
+      });
+  });
+
+  //   스크롤 방 소개 등장
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+      $(".Rmslider").css({ opacity: "1", transition: "0.5s" });
+    }
+  });
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 900) {
+      $(".int").css({ opacity: "1", transition: "1s" });
+    }
+  });
+
+  $("#Roomlist li").click(function () {
+    if ($("#Roomlist li a").hasClass("linebot2")) {
+      $("#Roomlist li a").removeClass("linebot2");
+      $(this).find("a").addClass("linebot2");
+    }
+  });
+  // 메뉴 클릭 시 페이드인/하이드
+  $(function () {
+    $("#R1").click(function () {
+      $(".Rmimgs1").fadeIn();
+      $(".Rmimgs2").hide();
+    });
+    $("#R2").click(function () {
+      $(".Rmimgs2").fadeIn().css("display", "flex");
+      $(".Rmimgs1").hide();
+    });
+  });
+  $(function () {
+    $("#R1").click(function () {
+      $(".rmtitle1").fadeIn();
+      $(".rmtitle2").hide();
+    });
+    $("#R2").click(function () {
+      $(".rmtitle2").fadeIn();
+      $(".rmtitle1").hide().css("dispaly", "none");
+    });
+  });
+  $(function () {
+    $("#R1").click(function () {
+      $(".int").fadeIn();
+      $(".int2").hide().css("dispaly", "none");
+    });
+    $("#R2").click(function () {
+      $(".int2").fadeIn();
+      $(".int").hide().css("dispaly", "none");
+    });
+  });
+  //   방 소개 제목 애니메이션
+  $("#Rmwrap h1")
+    .delay(1000)
+    .animate({ opacity: 0.9, bottom: 150 }, 1000, "swing");
 });
