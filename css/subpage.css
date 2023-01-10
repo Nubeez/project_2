@@ -109,7 +109,8 @@
     position: absolute;
     right: 0%;
     bottom: 0%;
-    transform: translate(-100%, -540%);
+    transform: translate(-100%, 0%);
+    z-index: 1000;
   }
   #Rmprev img {
     height: 20px;
@@ -124,7 +125,8 @@
     position: absolute;
     right: 0%;
     bottom: 0%;
-    transform: translate(0%, -540%);
+    transform: translate(0%, 0%);
+    z-index: 1000;
   }
   #Rmnext img {
     height: 20px;
@@ -254,7 +256,7 @@
     right: 0%;
     bottom: 0%;
     z-index: 1;
-    transform: translate(-100%, -540%);
+    transform: translate(-100%, 0%);
   }
   #Rmprev img {
     height: 20px;
@@ -270,7 +272,7 @@
     right: 0%;
     bottom: 0%;
     z-index: 1;
-    transform: translate(-100%, -540%);
+    transform: translate(-0%, 0%);
   }
   #Rmnext img {
     height: 20px;
@@ -399,9 +401,9 @@
     text-align: center;
     position: absolute;
     right: 0%;
-    bottom: 16%;
+    bottom: 0%;
     z-index: 1;
-    transform: translate(-100%);
+    transform: translate(-100%, 0%);
   }
   #Rmprev img {
     height: 20px;
@@ -415,7 +417,7 @@
     text-align: center;
     position: absolute;
     right: 0%;
-    bottom: 16%;
+    bottom: 0%;
     z-index: 1;
   }
   #Rmnext img {
