@@ -178,6 +178,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
   }
   #foodimg_box {
     width: 100%;
@@ -715,16 +716,6 @@
     max-width: 100%;
     min-height: 500px;
   }
-  /* .main_title h1 {
-    font-size: 2.3em;
-    font-family: "PuradakGentleGothicR";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 0px 2px black;
-    color: white;
-  } */
   .menubar {
     width: 1170px;
     /* height: 100px; */
@@ -888,6 +879,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
   }
   #foodimg_box {
     width: 100%;
@@ -1607,6 +1599,7 @@
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
+    justify-content: center;
   }
   #foodimg_box {
     width: 100%;
